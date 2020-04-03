@@ -1,0 +1,32 @@
+[
+  {
+    "role": "ANALISTA DE SISTEMAS",
+    "company": "WIPRO(MASTERCARD)",
+    "period": "MAIO 2014 – OUTUBRO 2019",
+    "description": "Desenvolvedor full stack java, em projetos usando spring para backend e microserviços, atuando na migração de projetos legados para tecnologias mais recentes(java8, angular). Atuando na contínua      melhoria dos projetos na correção de defeitos, melhorias na qualidade de      código com testes unitários. Trabalhei com uma equipe de desenvolvedores junior/treinee coordenando um projeto de integracao usando spring batch, delegando tarefas e realizando mentoria continua, utilizando metodologias ágeis para acompanhemento das atividades e auxilio nas atividades."
+  },
+  {
+    "role": "ANALISTA DE SISTEMAS",
+    "company": "Instituto Curitiba de Informática",
+    "period": "JANEIRO 2013 – MARÇO 2014",
+    "description": "Desenvolvedor full stack java, em projetos de gestão de conteúdo empresarial, usando tecnologias como spring jsf e jquery. Backend fazia uso de JNDI para conectar em servidores ldap, ssh e sftp. Atuando na melhoria da arquitetura, levantamento de requisitos e delegacão de atividades."
+  },
+  {
+    "role": "ANALISTA DE SISTEMAS",
+    "company": "VIVO",
+    "period": "JUNHO 2011 - NOVEMBRO 2012",
+    "description": "Full stack developer no projeto Sales Order management para integração com BPM (Savvion), desenvolvimento de web services e projetos (servlets, jsp / jsf) para atender demandas específicas de projetos para identicar e corrigir problemas de produção do Oracle Siebel CRM."
+  },
+  {
+    "role": "ANALISTA DE SISTEMAS",
+    "company": "HSBC",
+    "period": "JULHO 2008 - JUNHO 2011",
+    "description": "Análise e desenvolvimento de sistemas para o grupo HSBC. Tecnologias dos projetos demandavam atividades para distribuição e implementação em Websphere Portal, para aplicações construídas em JSF, JSP, Struts, Spring, Hibernate, HTML, jQuery, CSS. Os processos demandavam criação de casos de uso diagramas de sequência e atividade, baseados nas coletas de requisitos."
+  },
+  {
+    "role": "DESENVOLVEDOR",
+    "company": "ESCRIBA",
+    "period": "OUTUBRO 2005 - JULHO 2008",
+    "description": "Desenvolvimento usando JSF, Servlets, jpa com EJB e Hibernate, servidores Glassfish e JBoss, linux, desenvolvimento de sistemas para cartórios."
+  }
+]
