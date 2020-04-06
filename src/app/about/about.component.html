@@ -1,3 +1,30 @@
-<div fxLayout="row" fxFlex="33" fxFlexOffset="5">
-  <p style="padding: 15px;">Esse app foi feito com Angular 9</p>
+<div fxLayout="column" fxFlex="33" fxFlexOffset="5">
+  <mat-toolbar class="card-title mat-elevation-z6" style="margin-top: 10px;">
+    <p style="padding: 15px;">
+      Esse app foi construido com as seguintes bibliotecas
+    </p>
+  </mat-toolbar>
+  <mat-spinner *ngIf="notes?.length === 0">/</mat-spinner>
+  <mat-card *ngFor="let note of notes" class="card" style="margin-top: 10px;">
+    <mat-card-header
+      class="card-header card-header-danger card-header-tabs card-header-primary"
+    >
+      <div mat-card-avatar class="example-header-image">
+        <mat-icon
+          aria-disabled="true"
+          aria-hidden="false"
+          aria-label="Example home icon"
+          >{{ note.icon }}</mat-icon
+        >
+      </div>
+
+      <mat-card-title class="card-title">{{
+        note.name | titlecase
+      }}</mat-card-title>
+      <mat-card-subtitle style="margin-top: 3px;" class="card-category"
+        >{{ note.link | titlecase }}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="card-body"> </mat-card-content>
+  </mat-card>
 </div>

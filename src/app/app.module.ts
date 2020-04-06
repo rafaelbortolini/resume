@@ -13,11 +13,19 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
+import { MatTooltipModule } from "@angular/material/tooltip";
 
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { ChartistModule } from "ng-chartist";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    DashboardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,10 +35,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatIconModule,
     MatCardModule,
     MatButtonModule,
+    MatTooltipModule,
     MatProgressSpinnerModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ChartistModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

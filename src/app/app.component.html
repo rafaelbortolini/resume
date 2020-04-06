@@ -1,7 +1,11 @@
-<mat-toolbar color="primary">
-  <h1>Rafael Bortolini</h1>
+<mat-toolbar color="primary" class="mat-elevation-z10">
+  <mat-toolbar-row>
+    <h1>{{ "Rafael Bortolini" | uppercase }}</h1>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <button mat-button routerLink="/">Curr&iacute;culo</button>
+    <button mat-button routerLink="/dashboard">Dashboard</button>
+    <button mat-button routerLink="/about">Sobre</button>
+  </mat-toolbar-row>
 </mat-toolbar>
-
-<button mat-button routerLink="/">Home</button>
-<button mat-button routerLink="/about">About</button>
 <router-outlet></router-outlet>

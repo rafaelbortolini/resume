@@ -1,0 +1,606 @@
+<div class="main-content" fxLayout="column" fxFlex="70" fxFlexOffset="5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">content_copy</i>
+            </div>
+            <p class="card-category">Espa&ccedil;o Utilizado</p>
+            <h3 class="card-title">
+              49/50
+              <small>GB</small>
+            </h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons text-danger">warning</i>
+              <a href="javascript:void(0)">Aumentar espa&ccedil;o...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">store</i>
+            </div>
+            <p class="card-category">Receita</p>
+            <h3 class="card-title">$34,245</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">date_range</i> &Uacute;ltimas 24 Horas
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-danger card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">info_outline</i>
+            </div>
+            <p class="card-category">Defeitos Corrigidos</p>
+            <h3 class="card-title">75</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">local_offer</i> Monitorado do Github
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+            <p class="card-category">Seguidores</p>
+            <h3 class="card-title">+245</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">update</i> Atualizado recentemente
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div class="ct-chart" id="dailySalesChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Vendas di&aacute;rias</h4>
+            <p class="card-category">
+              <span class="text-success"
+                ><i class="fa fa-long-arrow-up"></i> 55%
+              </span>
+              Aumento das vendas no dia.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> atualizado h&aacute; 4
+              minutos
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-warning">
+            <div class="ct-chart" id="websiteViewsChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Assinaturas por email</h4>
+            <p class="card-category">Performance da &uacute;ltima campanha</p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> campanha enviada
+              h&aacute; 2 dias
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+            <div class="ct-chart" id="completedTasksChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Tarefas finalizadas</h4>
+            <p class="card-category">Performance da &uacute;ltima campanha</p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> campanha enviada
+              h&aacute; 2 dias
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header card-header-tabs card-header-primary">
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <span class="nav-tabs-title">Tarefas:</span>
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link active"
+                      href="#profile"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">bug_report</i> Defeitos
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link"
+                      href="#messages"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">code</i> Website
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link"
+                      href="#settings"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">cloud</i> Servidor
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane active" id="profile">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Assinar contrato
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Corrigir interface de email
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Organizar apresenta&ccedil;&atilde;o para stakeholders
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Criar 3 telas prot&oacute;tipo para nova funcionalidade
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="messages">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Organizar apresenta&ccedil;&atilde;o para stakeholders
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Organizar apresenta&ccedil;&atilde;o para stakeholders
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="settings">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Criar 3 telas prot&oacute;tipo para nova funcionalidade
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Criar 3 telas prot&oacute;tipo para nova funcionalidade
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Criar 3 telas prot&oacute;tipo para nova funcionalidade
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Editar Tarefa"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remover"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header card-header-warning">
+            <h4 class="card-title">
+              Estat&iacute;sticas dos funcion&aacute;rios
+            </h4>
+            <p class="card-category">
+              Funcion&aacute;rios novos em 6 de maio de 2020
+            </p>
+          </div>
+          <div class="card-body table-responsive">
+            <table class="table table-hover">
+              <thead class="text-warning">
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sal&aacute;rio</th>
+                <th>Estado</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Maria</td>
+                  <td>$36.738</td>
+                  <td>Minas Gerais</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Eduardo</td>
+                  <td>$23.789</td>
+                  <td>Bahia</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Rodrigo</td>
+                  <td>$56.142</td>
+                  <td>Rio Grande do Sul</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Fernanda</td>
+                  <td>$38.735</td>
+                  <td>Rio de Janeiro</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
