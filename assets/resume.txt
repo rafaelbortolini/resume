@@ -1,1 +1,15 @@
-dfgdfgdg
+git config --global credential.helper wincred
+git config credential.writelog
+will written to .git\credential.log 
+
+
+ng build --prod
+npm i -g angular-cli-ghpages
+
+ng build --prod --base-href "https://rafaelbortolini.github.io/resume/"
+ng build --prod --base-href "https://rafaelbortolini.github.io/resume/"
+
+then
+ngh --to activate publish changes on github
+ "ngh --dir dist/project-name"
+ngh --dir dist/resume --no-silent
